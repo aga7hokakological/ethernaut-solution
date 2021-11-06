@@ -1,0 +1,11 @@
+{
+  "name": "test3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/aga7hokakological/test3.git",
+  "author": "aga7hokakological <iamsaurabhmandavkar@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "web3": "^1.6.0"
+  }
+}
